@@ -1,0 +1,121 @@
+@import "../../../globalStyles/scss/variables.scss";
+
+.footer {
+  &__email {
+    background-color: #f6f9ff;
+    padding: 5rem 0;
+    margin-top: 3rem;
+  }
+  &__emailTitle {
+    text-align: center;
+  }
+  &__emailDiv {
+    text-align: center;
+    margin-top: 2rem;
+    input {
+      box-shadow: 1px 3px 9px -7px black;
+      width: 40%;
+      height: 3rem;
+      border-radius: 2rem;
+      font-weight: bold;
+      border: none;
+      padding: 0 2rem;
+      outline: none;
+      margin-right: 1rem;
+    }
+    button {
+      padding: 1rem 2rem;
+      background-color: #21125e;
+      border-radius: 2rem;
+      color: white;
+    }
+  }
+  &__favicons {
+    border-top: 1px solid $gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    p {
+      color: $gray;
+      font-size: 12px;
+    }
+    .bankimages {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      padding: 1rem 0;
+    }
+  }
+
+  &__menu {
+    background-color: $gray-light;
+    padding: $spacer * 3 0 $spacer * 2;
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+
+      div {
+        &:not(:last-of-type) {
+          padding-right: $spacer * 3;
+        }
+      }
+    }
+
+    &-section {
+      &-header {
+        font-weight: $bold-font-weight;
+        margin-bottom: $spacer;
+      }
+
+      &-content {
+        p {
+          font-weight: $bold-font-weight;
+          margin-bottom: $spacer;
+          font-size: $small-font-size;
+          color: $gray;
+
+          a {
+            text-decoration: none;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+
+  &-nav {
+    background-color: $gray-light;
+    padding-top: 3rem;
+
+    .container {
+      display: flex;
+      // flex-wrap: wrap;
+
+      div:not(:last-of-type) {
+        padding-right: $spacer * 3;
+      }
+    }
+
+    &__section {
+      &-header {
+        font-weight: $bold-font-weight;
+        margin-bottom: $spacer;
+        text-transform: uppercase;
+      }
+
+      &-content {
+        p {
+          margin-bottom: $spacer;
+          font-size: $small-font-size;
+          color: $gray;
+
+          a {
+            text-decoration: none;
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}

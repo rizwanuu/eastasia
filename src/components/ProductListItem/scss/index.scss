@@ -1,0 +1,50 @@
+@import "../../../globalStyles/scss/variables.scss";
+
+.product-list-item {
+  text-align: center;
+
+  &__title {
+    text-transform: $product-item-title-text-transform;
+    font-weight: $product-item-title-font-weight;
+    margin-top: $spacer;
+    text-align: left;
+  }
+
+  &__undiscounted_price {
+    text-decoration: line-through;
+    color: $gray;
+    font-size: $small-font-size;
+    font-weight: regular;
+  }
+
+  &__category {
+    color: $product-item-category-color;
+    text-align: left;
+  }
+
+  &__price {
+    font-weight: $product-item-price-font-weight;
+    margin: $product-item-price-margin;
+    text-align: left;
+  }
+
+  &__image {
+    background-color: $white;
+    display: flex;
+    height: 350px;
+    justify-content: center;
+    border-radius: 10px;
+    background: white;
+    width: 16.5rem;
+    border: 1px solid $gray-light;
+
+    img {
+      object-fit: contain;
+      width: 10rem;
+    }
+
+    @media (max-width: $small-screen) {
+      height: 210px;
+    }
+  }
+}
